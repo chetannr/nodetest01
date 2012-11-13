@@ -16,6 +16,6 @@ if (cluster.isMaster) {
   // In this case its a HTTP server
   http.createServer(function(req, res) {
     res.writeHead(200);
-    res.end("hello world\n");
-  }).listen(process.env.PORT);
+    res.end("hello world, hello gary\n");
+  }).listen(process.env.PORT || 4000);
 }
